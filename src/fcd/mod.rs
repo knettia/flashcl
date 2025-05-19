@@ -1,7 +1,7 @@
-mod data_entry;
+pub mod data_entry;
 use data_entry::DataEntry;
 
-mod card;
+pub mod card;
 use card::Card;
 
 fn build_card(entries: Vec<DataEntry>) -> Result<Card, Box<dyn std::error::Error>>
