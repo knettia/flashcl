@@ -108,6 +108,5 @@ impl DataEntry
 	pub fn as_string(&self) -> Option<StringDataEntry>
 	{
 		self.obj.as_any().downcast_ref::<StringDataEntry>().cloned()
-	} 
-
+	}
 }
